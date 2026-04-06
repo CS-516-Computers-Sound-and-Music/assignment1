@@ -16,10 +16,10 @@ Below is a sample of the first ~4 ms of each sine wave. To better visualize the 
 As expected, the clipped wave _feels louder_, though its max amplitude is technically the same as the smooth sine wave. I also felt the sound in different parts of my head, almost like I would make different shapes to reproduce the sound with my voice. 
 
 ## Volume
-I found that the raw audio was _extremely loud_, in my opinion. To combat this, I lowered the amplitude by dividing both `y` arrays by 10,000. I also found that when I played the .wav files using Quicktime, my computer's volume control were over-written. Because I cannot control these in code (unless I save lower amplitude files instead of following directions), I chose not to play these files using Quicktime and only in-code using `sounddevice`. 
+I found that the raw audio was _extremely loud_, in my opinion. To combat this, I lowered the amplitude by dividing both `y` arrays by 10,000. I also found that when I played the .wav files using Quicktime, my computer's volume control was over-written. Because I cannot control these in code (unless I save lower amplitude files instead of following directions), I chose not to play these files using Quicktime and only in-code using `sounddevice`. 
 
 ## Running the code
-Code which saves the requested information to `sine.wav` and `clipped.wav` as well as playing the sine and clipped-sine waves using `python clipped.py`. 
+Run the code which saves the requested information to `sine.wav` and `clipped.wav` as well as plays the sine and clipped-sine waves using `python clipped.py`. 
 
 ## Playing audio files
 My assignment includes three audio files:
