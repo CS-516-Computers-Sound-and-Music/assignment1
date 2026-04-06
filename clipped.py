@@ -14,7 +14,7 @@ def main():
         Sample Rate: 48000 samples per second
     """
     amplitude = 8192
-    frequency = 400
+    frequency = 440
     sample_rate = 48000
 
     sin_x = np.linspace(0,1,sample_rate)
@@ -56,9 +56,9 @@ def main():
 
     # Show the two waves
     stop = 200
-    plt.plot(sin_x[:stop], sin_y[:stop], label="Sine Wave")
+    plt.plot(sin_x[:stop], sin_y[:stop], label='Sine Wave')
     plt.plot(sin_x[:stop], sin_y[:stop]*2, c='orange',linestyle='dashed')
-    plt.plot(sin_x[:stop], clipped_y[:stop], c="orange", label="Clipped Sine Wave")
+    plt.plot(sin_x[:stop], clipped_y[:stop], c='orange', label='Clipped Sine Wave')
 
     plt.title(f"{frequency}Hz Sine Waves")
     plt.legend()
